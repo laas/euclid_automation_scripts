@@ -32,10 +32,13 @@
 
 import socket
 import sys
+from subprocess import Popen,PIPE
 host = '127.0.0.1'
-port = 8999
+p = Popen(["cat /intel/euclid/config/settings.ini | grep LEDServer  | cut -f2 -d'='"],shell=True,stdout=PIPE,stderr=PIPE)
+output,err = p.communicate()
+TCP_PORT = int(output)
 
 client = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-client.connect((host,port))
+client.connect((host,TCP_PORT))
 print "Sending: " + sys.argv[1]
 client.send(sys.argv[1])

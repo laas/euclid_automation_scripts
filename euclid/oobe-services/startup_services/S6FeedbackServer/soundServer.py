@@ -84,7 +84,9 @@ if __name__ == '__main__':
     TCP_PORT = 8998
     tcpServer = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     tcpServer.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-    tcpServer.bind(('127.0.0.1',TCP_PORT))
+    tcpServer.bind(('127.0.0.1',0))
+    TCP_PORT= tcpServer.getsockname()[1]
+    subprocess.Popen(["sed -i '/" + 'SoundServer' + "/c\'" + 'SoundServer=' + str(TCP_PORT) +  " /intel/euclid/config/settings.ini"],shell=True)
 
     while True:
         tcpServer.listen(4)

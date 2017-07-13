@@ -1,4 +1,17 @@
+<?xml version="1.0" ?>
 <config version="0.3">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -7,18 +20,54 @@
   <nodes>
     
     
+    
+    
+    
+    
+    
+    
    
        
+    
+    
+    
+    
+    
+    
     
     
     
     <node name="Static Transform">
       
       
+      
+      
+      
+      
+      
+      
            
       
       
+      
+      
+      
+      
+      
+      
       <package>configuration_node</package>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       
@@ -30,16 +79,40 @@
       
       
       
-	    
       
       
-      
-      <configurationItem />
       
       
       
       
 	    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <configurationItem/>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+	    
+      
+      
+      
+      
+      
+      
       
       
       
@@ -48,7 +121,19 @@
         
         
         
+        
+        
+        
+        
+        
+        
 		
+        
+        
+        
+        
+        
+        
         
         
         
@@ -57,7 +142,19 @@
         
         
         
+        
+        
+        
+        
+        
+        
 	    
+      
+      
+      
+      
+      
+      
       
       
       
@@ -66,20 +163,56 @@
       
       
       
+      
+      
+      
+      
+      
+      
 	    
       
       
       
-      <launch_parameters>x:=1 y:=0 z:=0 yaw:=0 pitch:=0 roll:=0 frame_id:="camera_link" child_frame_id:="base_link" frame_rate:=100</launch_parameters>
       
       
       
       
+      
+      
+      <launch_parameters>x:=1 y:=0 z:=0 yaw:=0 pitch:=0 roll:=0 frame_id:=&quot;camera_link&quot; child_frame_id:=&quot;base_link&quot; frame_rate:=100</launch_parameters>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    
     
     
     
     
     </node>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -97,7 +230,31 @@
       
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       <package>realsense_person</package>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       
@@ -115,7 +272,31 @@
       
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       <configurationItem>some_file</configurationItem>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       
@@ -133,7 +314,31 @@
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <node>camera/manager</node>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -147,6 +352,18 @@
         
         
         
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
       
       
       
@@ -160,16 +377,52 @@
       
       
       
-      <launch_parameters />
       
       
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+      <launch_parameters/>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    
     
     
     
     
     </node>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -191,7 +444,31 @@
       
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       <package>cs_depth_transcode</package>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       
@@ -209,6 +486,18 @@
       
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       <configurationItem>some_file</configurationItem>
       
       
@@ -218,7 +507,31 @@
       
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       <running_nodes>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -236,11 +549,35 @@
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <node>CsDepthTranscode</node>
         
         
         
         
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
       
       
       
@@ -254,16 +591,52 @@
       
       
       
-      <launch_parameters />
       
       
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+      <launch_parameters/>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    
     
     
     
     
     </node>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -278,7 +651,31 @@
       
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       <package>realsense_wanderer</package>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       
@@ -290,13 +687,49 @@
       
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       <configurationItem>some_file</configurationItem>
+      
+      
+      
+      
+      
+      
       
       
             
       
       
+      
+      
+      
+      
+      
+      
       <running_nodes>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -308,10 +741,34 @@
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <node>standalone_nodelet_wanderer</node>
         
         
         
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
       
       
       </running_nodes>
@@ -320,15 +777,1602 @@
       
       
       
-      <launch_parameters />
       
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <launch_parameters/>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    
     
     
     </node>
     
+    
+    
+    
+    
+    
+    
         
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <node name="Cameras No Motion">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <package>realsense_camera</package>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <launch_file>lr200m_nodelet_default.launch</launch_file>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <configurationItem>some_file</configurationItem>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <running_nodes>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <node>camera/nodelet_manager</node>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <node>camera/driver</node>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      </running_nodes>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <launch_parameters>enable_fisheye:=false enable_imu:=false</launch_parameters>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </node>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <node name="system_monitor">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <package>system_monitor</package>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <launch_file>monitor.launch</launch_file>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <configurationItem>some_file</configurationItem>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <running_nodes>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <node>CsDeviceMonitor</node>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      </running_nodes>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <launch_parameters/>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </node>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <node name="network_manager">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <package>network_manager</package>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <launch_file>network_manager.launch</launch_file>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <configurationItem>some_file</configurationItem>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <running_nodes>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <node>CsNetworkManager</node>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      </running_nodes>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <launch_parameters/>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </node>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    <node name="Depth Follower">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <package>realsense_depth_follower</package>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <launch_file>realsense_depth_follower.launch</launch_file>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <configurationItem>some_file</configurationItem>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <running_nodes>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <node>realsense_depth_follower</node>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <node>follower_standalone_nodelet</node>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      </running_nodes>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <launch_parameters/>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </node>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <node name="Person Follower">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <package>realsense_person_follower</package>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <launch_file>realsense_person_follower.launch</launch_file>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <configurationItem>some_file</configurationItem>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <running_nodes>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <node>realsense_person_follower</node>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <node>person_follower_standalone_nodelet</node>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      </running_nodes>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <launch_parameters/>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </node>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <node name="Robot Movement Controller">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <package>robot_movement_control</package>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <launch_file>robot_movement_controller.launch</launch_file>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <configurationItem>some_file</configurationItem>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <running_nodes>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <node>realsense_robot_control</node>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <node>robot_movement_controller_standalone_nodelet</node>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      </running_nodes>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <launch_parameters/>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </node>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <node name="Turtlebot">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <package>turtlebot_bringup</package>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <launch_file>minimal.launch</launch_file>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <configurationItem>some_file</configurationItem>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <running_nodes>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <node>mobile_base_nodelet_manager</node>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <node>mobile_base</node>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      </running_nodes>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <launch_parameters/>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </node>
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+  
+    
+    
+    
+    
+    
+    
+    <node name="Arduino">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <package>cs_arduino_wrapper</package>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <launch_file>arduino_wrapper_nodelet.launch</launch_file>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <configurationItem>some_file</configurationItem>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <launch_parameters>port:=/dev/ttyACM0</launch_parameters>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <running_nodes>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <node>CsArduinoMotorConfiguration</node>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <node>serial_node</node>
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
+      </running_nodes>
+      
+      
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    
+    </node>
+    
+    
+    
+    
+    
+    
+  
+  
+    
     
     
     
@@ -368,85 +2412,7 @@
       
       
       
-      <running_nodes>
-        
-        
-        
-        
-        
-        
-        
-        
-        <node>camera/nodelet_manager</node>
-        
-        
-        
-        
-        
-        
-        <node>camera/driver</node>
-        
-        
-        
-      
-      
-      
-      
-      </running_nodes>
-      
-      
-      
-      
-      
-      
-      
-      
-      <launch_parameters />
-      
-      
-      
-      
-    
-    
-    
-    
-    </node>
-    
-    
-    
-    
-    
-    
-    
-    
-    <node name="Cameras No Motion">
-      
-      
-      
-      
-      
-      
-      
-      
-      <package>realsense_camera</package>
-      
-      
-      
-      
-      
-      
-      
-      
-      <launch_file>lr200m_nodelet_default.launch</launch_file>
-      
-      
-      
-      
-      
-      
-      
-      
-      <configurationItem>some_file</configurationItem>
+      <launch_parameters/>
       
       
       
@@ -471,269 +2437,12 @@
         
         
         
+        
+        
         <node>camera/driver</node>
         
         
         
-      
-      
-      
-      
-      </running_nodes>
-      
-      
-      
-      
-      
-      
-      
-      
-      <launch_parameters>enable_fisheye:=false enable_imu:=false</launch_parameters>
-      
-      
-      
-      
-    
-    
-    
-    
-    </node>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <node name="system_monitor">
-      
-      
-      
-      
-      
-      
-      
-      
-      <package>system_monitor</package>
-      
-      
-      
-      
-      
-      
-      
-      
-      <launch_file>monitor.launch</launch_file>
-      
-      
-      
-      
-      
-      
-      
-      
-      <configurationItem>some_file</configurationItem>
-      
-      
-      
-      
-      
-      
-      
-      
-      <running_nodes>
-        
-        
-        
-        
-        
-        
-        
-        
-        <node>CsDeviceMonitor</node>
-        
-        
-        
-        
-      
-      
-      
-      
-      </running_nodes>
-      
-      
-      
-      
-      
-      
-      
-      
-      <launch_parameters />
-      
-      
-      
-      
-    
-    
-    
-    
-    </node>
-    
-    
-    
-    
-    
-    
-    
-    
-    <node name="network_manager">
-      
-      
-      
-      
-      
-      
-      
-      
-      <package>network_manager</package>
-      
-      
-      
-      
-      
-      
-      
-      
-      <launch_file>network_manager.launch</launch_file>
-      
-      
-      
-      
-      
-      
-      
-      
-      <configurationItem>some_file</configurationItem>
-      
-      
-      
-      
-      
-      
-      
-      
-      <running_nodes>
-        
-        
-        
-        
-        
-        
-        
-        
-        <node>CsNetworkManager</node>
-        
-        
-        
-        
-      
-      
-      
-      
-      </running_nodes>
-      
-      
-      
-      
-      
-      
-      
-      
-      <launch_parameters />
-      
-      
-      
-      
-    
-    
-    
-    
-    </node>
-    
-    
-    
-    
-        
-    
-    <node name="RealSense SLAM">
-      
-      
-      
-      
-      
-      
-      
-      
-      <package>realsense_sp</package>
-      
-      
-      
-      
-      
-      
-      
-      
-      <launch_file>sp.launch</launch_file>
-      
-      
-      
-      
-      
-      
-      
-      
-      <configurationItem>some_file</configurationItem>
-      
-      
-      
-      
-      
-      
-      
-      
-      <launch_parameters />
-      
-      
-      
-      
-      
-      
-      
-      
-      <running_nodes>
-        
-        
-        
-        
-        
-        
-        
-        
-        <node>manager</node>
-        
-        
-        
-        
-        
-        
-        
-        
-        <node>sp</node>
-        
-        
-        
         
       
       
@@ -752,376 +2461,34 @@
     
     
     
-    
-    
-    <node name="Depth Follower">
-      
-      
-      
-      
-      
-      
-      
-      
-      <package>realsense_depth_follower</package>
-      
-      
-      
-      
-      
-      
-      
-      
-      <launch_file>realsense_depth_follower.launch</launch_file>
-      
-      
-      
-      
-      
-      
-      
-      
-      <configurationItem>some_file</configurationItem>
-      
-      
-      
-      
-      
-      
-      
-      
-      <running_nodes>
-        
-        
-        
-        
-        
-        
-        
-        
-        <node>realsense_depth_follower</node>
-        
-        
-        
-        
-        
-        
-        
-        
-        <node>follower_standalone_nodelet</node>
-        
-        
-        
-        
-      
-      
-      
-      
-      </running_nodes>
-      
-      
-      
-      
-      
-      
-      
-      
-      <launch_parameters />
-      
-      
-      
-      
-    
-    
-    
-    
-    </node>
-    
-    
-    
-    
-    
-    
-    
-    
-    <node name="Person Follower">
-      
-      
-      
-      
-      
-      
-      
-      
-      <package>realsense_person_follower</package>
-      
-      
-      
-      
-      
-      
-      
-      
-      <launch_file>realsense_person_follower.launch</launch_file>
-      
-      
-      
-      
-      
-      
-      
-      
-      <configurationItem>some_file</configurationItem>
-      
-      
-      
-      
-      
-      
-      
-      
-      <running_nodes>
-        
-        
-        
-        
-        
-        
-        
-        
-        <node>realsense_person_follower</node>
-        
-        
-        
-        
-        
-        
-        
-        
-        <node>person_follower_standalone_nodelet</node>
-        
-        
-        
-        
-      
-      
-      
-      
-      </running_nodes>
-      
-      
-      
-      
-      
-      
-      
-      
-      <launch_parameters />
-      
-      
-      
-      
-    
-    
-    
-    
-    </node>
-    
-    
-    
-    
-    
-    
-    
-    
-    <node name="Robot Movement Controller">
-      
-      
-      
-      
-      
-      
-      
-      
-      <package>robot_movement_control</package>
-      
-      
-      
-      
-      
-      
-      
-      
-      <launch_file>robot_movement_controller.launch</launch_file>
-      
-      
-      
-      
-      
-      
-      
-      
-      <configurationItem>some_file</configurationItem>
-      
-      
-      
-      
-      
-      
-      
-      
-      <running_nodes>
-        
-        
-        
-        
-        
-        
-        
-        
-        <node>realsense_robot_control</node>
-        
-        
-        
-        
-        
-        
-        
-        
-        <node>robot_movement_controller_standalone_nodelet</node>
-        
-        
-        
-        
-      
-      
-      
-      
-      </running_nodes>
-      
-      
-      
-      
-      
-      
-      
-      
-      <launch_parameters />
-      
-      
-      
-      
-    
-    
-    
-    
-    </node>
-    
-    
-    
-    
-    
-    
-    
-    
-    <node name="Turtlebot">
-      
-      
-      
-      
-      
-      
-      
-      
-      <package>turtlebot_bringup</package>
-      
-      
-      
-      
-      
-      
-      
-      
-      <launch_file>minimal.launch</launch_file>
-      
-      
-      
-      
-      
-      
-      
-      
-      <configurationItem>some_file</configurationItem>
-      
-      
-      
-      
-      
-      
-      
-      
-      <running_nodes>
-        
-        
-        
-        
-        
-        
-        
-        
-        <node>mobile_base_nodelet_manager</node>
-        
-        
-        
-        
-        
-        
-        
-        
-        <node>mobile_base</node>
-        
-        
-        
-        
-      
-      
-      
-      
-      </running_nodes>
-      
-      
-      
-      
-      
-      
-      
-      
-      <launch_parameters />
-      
-      
-      
-      
-    
-    
-    
-    
-    </node>
-    
-    
-
     
   
-    <node name="Arduino">
-      <package>cs_arduino_wrapper</package>
-      <launch_file>arduino_wrapper_nodelet.launch</launch_file>
+  
+    
+  
+    <node name="RealSense SLAM">
+      <package>realsense_sp</package>
+      <launch_file>sp.launch</launch_file>
       <configurationItem>some_file</configurationItem>
-      <launch_parameters>port:=/dev/ttyACM0</launch_parameters>
+      <launch_parameters/>
       <running_nodes>
-        <node>CsArduinoMotorConfiguration</node>
-        <node>serial_node</node>
+        <node>manager</node>
+        <node>sp</node>
       </running_nodes>
     </node>
   </nodes>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -1139,34 +2506,142 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <scenario name="Cameras">
       
       
+      
+      
+      
+      
+      
+      
 	
+      
+      
+      
+      
+      
+      
       
       <node name="Cameras">
         
         
-        <launch_parameters />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
         
       
+      
+      
+      
+      
+      
+      
       </node>
+      
+      
+      
+      
+      
+      
       
       
 	
       
+      
+      
+      
+      
+      
+      
       <node name="Depth Transcode">
         
         
-        <launch_parameters />
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
       
       </node>
       
       
+      
+      
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    
     
     
     </scenario>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -1174,299 +2649,1451 @@
     <scenario name="6DOF">
       
       
+      
+      
+      
+      
+      
+      
         
+      
+      
+      
+      
+      
+      
       
       <node name="Cameras">
         
         
-        <launch_parameters />
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
       
       </node>
       
       
+      
+      
+      
+      
+      
+      
 	
+      
+      
+      
+      
+      
+      
       
       <node name="RealSense SLAM">
         
         
-        <launch_parameters />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
         
       
+      
+      
+      
+      
+      
+      
       </node>
+      
+      
+      
+      
+      
+      
       
       
 	
       
+      
+      
+      
+      
+      
+      
       <node name="Depth Transcode">
         
         
-        <launch_parameters />
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
       
       </node>
       
       
+      
+      
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    
     
     
     </scenario>
     
     
+    
+    
+    
+    
+    
+    
 
     
+    
+    
+    
+    
+    
+    
     <scenario name="PersonView">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       <node name="Cameras">
         
         
-        <launch_parameters />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
         
       
+      
+      
+      
+      
+      
+      
       </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       <node name="Depth Transcode">
         
         
-        <launch_parameters />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
         
       
+      
+      
+      
+      
+      
+      
       </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       <node name="RealSense Person Tracking">
         
         
-        <launch_parameters />
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
       
       </node>
       
+      
+      
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    
     
     </scenario>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     <scenario name="TurtlebotPersonFollower">
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       <node name="Cameras">
         
         
-        <launch_parameters />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
         
       
+      
+      
+      
+      
+      
+      
       </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       <node name="Depth Transcode">
         
         
-        <launch_parameters />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
         
       
+      
+      
+      
+      
+      
+      
       </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       <node name="Person Follower">
         
         
-        <launch_parameters />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
         
       
+      
+      
+      
+      
+      
+      
       </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       <node name="Robot Movement Controller">
         
         
-        <launch_parameters />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
         
       
+      
+      
+      
+      
+      
+      
       </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       <node name="RealSense Person Tracking">
         
         
-        <launch_parameters />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
         
       
+      
+      
+      
+      
+      
+      
       </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       <node name="Turtlebot">
         
         
-        <launch_parameters />
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
       
       </node>
       
+      
+      
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    
     
     </scenario>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     <scenario name="TurtlebotDepthFollower">
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       <node name="Cameras">
         
         
-        <launch_parameters />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
         
       
+      
+      
+      
+      
+      
+      
       </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       <node name="Depth Transcode">
         
         
-        <launch_parameters />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
         
       
+      
+      
+      
+      
+      
+      
       </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       <node name="Depth Follower">
         
         
-        <launch_parameters />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
         
       
+      
+      
+      
+      
+      
+      
       </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       <node name="Robot Movement Controller">
         
         
-        <launch_parameters />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
         
       
+      
+      
+      
+      
+      
+      
       </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       <node name="Turtlebot">
         
         
-        <launch_parameters />
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
       
       </node>
       
+      
+      
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    
     
     </scenario>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     <scenario name="TurtlebotCA">
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       <node name="Cameras">
         
         
-        <launch_parameters />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
         
       
+      
+      
+      
+      
+      
+      
       </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       <node name="Depth Transcode">
         
         
-        <launch_parameters />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
         
       
+      
+      
+      
+      
+      
+      
       </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       <node name="Collision Avoidance">
         
         
-        <launch_parameters />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
         
       
+      
+      
+      
+      
+      
+      
       </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       <node name="Robot Movement Controller">
         
         
-        <launch_parameters />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
         
       
+      
+      
+      
+      
+      
+      
       </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       <node name="Turtlebot">
         
         
-        <launch_parameters />
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
       
       </node>
       
+      
+      
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    
     
     </scenario>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     <scenario name="ArduinoPersonFollower">
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       <node name="Cameras">
         
         
-        <launch_parameters />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
         
       
+      
+      
+      
+      
+      
+      
       </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       <node name="Depth Transcode">
         
         
-        <launch_parameters />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
         
       
+      
+      
+      
+      
+      
+      
       </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       <node name="Person Follower">
         
         
-        <launch_parameters />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
         
       
+      
+      
+      
+      
+      
+      
       </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       <node name="Robot Movement Controller">
         
         
-        <launch_parameters />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
         
       
+      
+      
+      
+      
+      
+      
       </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       <node name="RealSense Person Tracking">
         
         
-        <launch_parameters />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
         
       
+      
+      
+      
+      
+      
+      
       </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       <node name="Arduino">
         
         
-        <launch_parameters />
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
       
       </node>
       
+      
+      
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    
     
     </scenario>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -1474,58 +4101,425 @@
     <scenario name="6DoF-Person">
       
       
+      
+      
+      
+      
+      
+      
 	
+      
+      
+      
+      
+      
+      
       
       <node name="Cameras">
         
         
-        <launch_parameters />
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
       
       </node>
       
       
+      
+      
+      
+      
+      
+      
 	
+      
+      
+      
+      
+      
+      
       
       <node name="RealSense SLAM">
         
         
-        <launch_parameters />
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
       
       </node>
       
       
+      
+      
+      
+      
+      
+      
 	
+      
+      
+      
+      
+      
+      
       
       <node name="Depth Transcode">
         
         
-        <launch_parameters />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
         
       
+      
+      
+      
+      
+      
+      
       </node>
+      
+      
+      
+      
+      
+      
       
       
 	
       
+      
+      
+      
+      
+      
+      
       <node name="RealSense Person Tracking">
         
         
-        <launch_parameters />
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
       
       </node>
       
       
+      
+      
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    
     
     
     </scenario>
     
     
+    
+    
+    
+    
+    
+    
   
   
-  <scenario name="ArduinoCA"><node name="Cameras"><launch_parameters /></node><node name="Depth Transcode"><launch_parameters /></node><node name="Collision Avoidance"><launch_parameters /></node><node name="Robot Movement Controller"><launch_parameters /></node><node name="Arduino"><launch_parameters /></node></scenario></scenarios>
+  
+    
+    
+    
+    
+    
+    <scenario name="ArduinoCA">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <node name="Cameras">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <node name="Depth Transcode">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <node name="Collision Avoidance">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <node name="Robot Movement Controller">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      </node>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <node name="Arduino">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <launch_parameters/>
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      </node>
+      
+      
+      
+      
+      
+    
+    
+    
+    
+    
+    </scenario>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </scenarios>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -1543,16 +4537,52 @@
     
     
     
-    <name />
     
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    <name/>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
   
   
   
   
   </default_scenario>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -1570,7 +4600,31 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <node>system_monitor</node>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -1584,11 +4638,35 @@
     
     
     
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
   
   
   
   
   </system_nodes>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -1606,7 +4684,31 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <node>Turtlebot</node>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -1620,11 +4722,35 @@
     
     
     
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
   
   
   
   
   </robots>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -1642,7 +4768,6 @@
     
     
     
-    <node name="Cameras" />
     
     
     
@@ -1651,7 +4776,11 @@
     
     
     
-    <node name="Cameras No Motion" />
+    
+    
+    
+    
+    <node name="Cameras No Motion"/>
     
     
     
@@ -1660,7 +4789,6 @@
     
     
     
-    <node name="RealSense SLAM" />
     
     
     
@@ -1669,7 +4797,11 @@
     
     
     
-    <node name="Depth Transcode" />
+    
+    
+    
+    
+    <node name="Depth Transcode"/>
     
     
     
@@ -1677,7 +4809,6 @@
     
     
     
-    <node name="Depth Follower" />
     
     
     
@@ -1685,14 +4816,51 @@
     
     
     
-    <node name="Collision Avoidance" />
+    
+    
+    
+    
+    
+    <node name="Depth Follower"/>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <node name="Collision Avoidance"/>
+    
+    
+    
+    
+    
+    
     
     
 
     
     
     
-    <node name="Person Follower" />
+    
+    
+    
+    
+    
+    
+    <node name="Person Follower"/>
     
     
     
@@ -1700,7 +4868,25 @@
     
     
     
-    <node name="Robot Movement Controller" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <node name="Robot Movement Controller"/>
+    
+    
+    
+    
+    
+    
     
     
     
@@ -1708,14 +4894,38 @@
     
     
     
-    <node name="RealSense Person Tracking" />
+    
+    
+    
+    
+    
+    
+    <node name="RealSense Person Tracking"/>
+    
+    
+    
+    
+    
+    
     
     
      
     
     
     
-    <node name="Static Transform" />
+    
+    
+    
+    
+    
+    
+    <node name="Static Transform"/>
+    
+    
+    
+    
+    
+    
     
     
     
@@ -1724,12 +4934,52 @@
   
   
   
-    <node name="Arduino" />
+    
+    
+    
+    
+    
+    
+    <node name="Arduino"/>
+    
+    
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+    <node name="Cameras"/>
+    
+    
+    
+    
+  
+  
+    
+  
+    <node name="RealSense SLAM"/>
   </oobe_nodes>
   
   
   
   
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
 
 
 

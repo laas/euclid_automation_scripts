@@ -43,6 +43,7 @@ from datetime import timedelta
 import socket
 import sys
 import pickle
+import subprocess
 
 class CsConnectivityMonitor(object):
    
@@ -116,8 +117,13 @@ class CsConnectivityMonitor(object):
     def _runNetworkFlowServer(self):
         try:
             # Create the socket
+            
             self._sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            self._sock.bind((self._tcpIP, self._port))
+            self._sock.bind((self._tcpIP, 0))
+            self._port = self._sock.getsockname()[1]
+
+            subprocess.Popen(["sed -i '/" + 'ConnectivityMonitor' + "/c\'" + 'ConnectivityMonitor=' + str(self._port) +  " /intel/euclid/config/settings.ini"],shell=True)
+
             self._sock.listen(1)    
             print('Network Flow Service Ready')
             
@@ -459,20 +465,17 @@ class CsConnectivityMonitor(object):
         res = False
         while res == False:
             try:
-		try: 
-			self._networkHAL.ResetWiFi()
-		except  Exception as eR:
-			print >>sys.stderr, 'Reset Wifi Error: {}. Ignoring and reconnecting'.format(str(eR.message)) 
+                
+
                 self._networkHAL.ReconnectNetwork(ssid)
-                print "Connected!"
                 res = True
             except  Exception as eR:
-                 print >>sys.stderr, 'Reconnect To Network Failed, Error: {}'.format(str(eR.message))
-                 if not force:
+                print >>sys.stderr, 'Reconnect To Network Failed, Error: {}'.format(str(eR.message))
+                if not force:
                     print "Couldn't connect, aborting"
                     break
-                 print "Couldnt connect, retrying"
-        
+                print "Couldnt connect, retrying"
+
         return res
         
         
