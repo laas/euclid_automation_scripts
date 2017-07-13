@@ -35,15 +35,20 @@ source $ROS_INSTALL_DIR/setup.bash
 
 #### check whether, system is configured to connect to external network
 
+NetworkName=`grep "ssid=" $EUCLID_ROOT/config/settings.ini | cut -d'=' -f2`
+
 # wait till network manager is ready
 
 if [ $1 = "false" ]; then
-    sleep 10
-    
+    # wait up to 5mn to connect
+    nmcli connection up id $NetworkName
+    nm-online -t 300
+    status=$?
+    if [ $status != 0 ]; then
+	exit 2
+    fi
 fi
 
-
-NetworkName=`grep "ssid=" $EUCLID_ROOT/config/settings.ini | cut -d'=' -f2`
 currentNetwork=`nmcli --fields NAME,DEVICE connection show --active | grep wlan0 | cut -f1 -d ' '`
 status=0
 
@@ -86,16 +91,34 @@ if ([ -z "$currentNetwork" ] || [ $currentNetwork != $NetworkName ]); then
   sleep 1
 
 fi
+
+#### check for USB adapter
+
+usbDevice=`nmcli -t --fields DEVICE,TYPE,CONNECTION device status | grep ethernet | cut -f1 -d ':'`
+if [ -n "$usbDevice" ]; then
+    nmcli device connect $usbDevice
+    nmcli --fields NAME,DEVICE connection show --active | grep -q $usbDevice
+    if [ $? -ne 0 ]; then
+	# no usb connection
+	unset usbDevice
+    fi
+fi
+
 #### check whether ROS MASTER URI is local IP address or remote
 # generate ros_config.bash
 # generate cs_ip.js
-interface=`ifconfig | grep wlan | cut -f1 -d ' '`
+if [ x"$usbDevice" != "x"  ]; then
+    interface=$usbDevice
+else
+    interface=`ifconfig | grep wlan | cut -f1 -d ' '`
+fi
 ip_address=`ifconfig $interface | grep "inet addr:" | cut -d':' -f2 | cut -d' ' -f1`
 
 if [ -z "$ip_address" ]; then
     ip_address="10.42.0.1"
 
 fi
+echo "S1Network/init.sh: ip_address '${usbDevice}' '${interface}' $ip_address" > /tmp/ip_address.txt
 
 ros_master_uri=`grep "ROSMasterURI=" $EUCLID_ROOT/config/settings.ini | cut -d'=' -f2`
 
